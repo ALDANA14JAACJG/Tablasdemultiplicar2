@@ -1,10 +1,8 @@
 package com.aldana.jorge.tablasdemultiplicar
 
-import android.graphics.drawable.AnimatedImageDrawable
-import android.graphics.drawable.AnimationDrawable
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import com.airbnb.lottie.LottieAnimationView
 
 class ResultadoActivity : AppCompatActivity() {
@@ -15,12 +13,13 @@ class ResultadoActivity : AppCompatActivity() {
 
         animView = findViewById(R.id.animation_view)
 
+        animView.setAnimation(R.raw.documentchecktrue)/*
         val extras = intent.extras
         val respuestaCorrecta = extras!!.getBoolean("respuesta")
         if(respuestaCorrecta){
             animView.setAnimation(R.raw.documentchecktrue)
         }else{
             animView.setAnimation(R.raw.rejectdocumentfiles)
-        }
+        }*/
     }
 }

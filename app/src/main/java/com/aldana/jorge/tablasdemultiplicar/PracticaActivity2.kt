@@ -1,5 +1,6 @@
 package com.aldana.jorge.tablasdemultiplicar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -31,7 +32,7 @@ class PracticaActivity2 : AppCompatActivity() {
             }else{
                 respuestaCorrecta = producto == strRespuesta.toInt()
                 generaMultiplicacion()
-                val mostrarResultado = intent(this,ResultadoActivity::class.java)
+                val mostrarResultado = Intent(this,ResultadoActivity::class.java)
                 mostrarResultado.putExtra("respuesta",respuestaCorrecta)
                 startActivity(mostrarResultado)
             }

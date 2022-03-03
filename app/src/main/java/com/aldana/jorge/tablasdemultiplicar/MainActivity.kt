@@ -1,7 +1,9 @@
 package com.aldana.jorge.tablasdemultiplicar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     lateinit var btnPracticar:Button
@@ -12,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         btnPracticar .setOnClickListener{
             val intentPracticar = Intent(this,PracticaActivity2::class.java)
-            starActivity(intentPracticar)
+            startActivity(intentPracticar)
 
         }
     }
